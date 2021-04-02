@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanesClientes">
+
+    <Spinner
+        android:id="@+id/spnEn_PlanCl"
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnPlan__PlanCl"
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnClientes_PlanCl" />
+
+    <Spinner
+        android:id="@+id/spnClientes_PlanCl"
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnEn_PlanCl" />
+
+    <Button
+        android:id="@+id/btnComprar_Plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="44dp"
+        android:text="Comprar"
+        android:textStyle="italic"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/spnClientes_PlanCl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:autoText="true"
+        android:gravity="center"
+        android:text="Fecha de Compra:"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnPlan__PlanCl" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="20dp"
+        android:autoText="true"
+        android:gravity="center"
+        android:text="Fecha anterior:"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="20dp"
+        android:autoText="true"
+        android:gravity="center"
+        android:text="Vencimiento:"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/txtFechaCompra_PlanCl"
+        android:layout_width="127dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="25dp"
+        android:background="#00FFFFFF"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:textColor="#2742D8"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/spnPlan__PlanCl" />
+
+    <EditText
+        android:id="@+id/txtVencimiento_PlanCl"
+        android:layout_width="127dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="2dp"
+        android:background="#00FFFFFF"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:textColor="#2742D8"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaAnterior_PlanCl" />
+
+    <EditText
+        android:id="@+id/txtDiasRestantes_PlanCl"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="2dp"
+        android:background="#00FFFFFF"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:textColor="#2742D8"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/txtVencimiento_PlanCl" />
+
+    <EditText
+        android:id="@+id/txtNuevosDias_PlanCl"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="2dp"
+        android:background="#00FFFFFF"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:textColor="#2742D8"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiasRestantes_PlanCl" />
+
+    <EditText
+        android:id="@+id/txtPrecio_PlanCl"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="2dp"
+        android:background="#00FFFFFF"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:textColor="#2742D8"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/txtNuevosDias_PlanCl" />
+
+    <EditText
+        android:id="@+id/txtFechaAnterior_PlanCl"
+        android:layout_width="127dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="2dp"
+        android:background="#00FFFFFF"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:textColor="#2742D8"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaCompra_PlanCl" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="20dp"
+        android:autoText="true"
+        android:gravity="center"
+        android:text="Dias restantes:"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="20dp"
+        android:autoText="true"
+        android:gravity="center"
+        android:text="Nuevos Dias restantes:"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="20dp"
+        android:autoText="true"
+        android:gravity="center"
+        android:text="Precio:  $"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecio_PlanCl" />
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="269dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space3">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/table_ClientePlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#9E8CCCFF"
+                    android:stretchColumns="*"
+                    android:textColor="#008EFF"/>
+            </HorizontalScrollView>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

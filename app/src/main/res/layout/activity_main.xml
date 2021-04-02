@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Logo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@string/txtUser"
+        android:ems="10"
+        android:hint="@string/txtUser"
+        android:inputType="textPersonName"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/txtpass"
+        android:ems="10"
+        android:hint="@string/txtpass"
+        android:inputType="textPassword"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUser" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnIngresar"
+        app:backgroundTint="#059DE1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPass" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="261dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="52dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logonuevo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="262dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="48dp"
+        android:background="#EFFDFF"
+        android:text="@string/autor"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#08910E"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevoEntrenador">
+
+    <EditText
+        android:id="@+id/txtTelA_Cliente"
+        android:layout_width="189dp"
+        android:layout_height="35sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/TelA_En"
+        android:inputType="number"
+        android:textColor="#008EFF"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/txtTel_Cliente"
+        app:layout_constraintTop_toBottomOf="@+id/txtDire_Cliente" />
+
+    <EditText
+        android:id="@+id/txtApe_Cliente"
+        android:layout_width="190dp"
+        android:layout_height="35sp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/Ape_En"
+        android:inputType="textPersonName"
+        android:textColor="#008EFF"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtNom_Cliente"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDire_Cliente"
+        android:layout_width="375dp"
+        android:layout_height="35sp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/Dire_En"
+        android:inputType="textPersonName"
+        android:textColor="#008EFF"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNom_Cliente" />
+
+    <EditText
+        android:id="@+id/txtUser_Cliente"
+        android:layout_width="135dp"
+        android:layout_height="35sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/User_En"
+        android:inputType="textPersonName"
+        android:textColor="#008EFF"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEdad_Cliente" />
+
+    <EditText
+        android:id="@+id/txtEnfer_Cliente"
+        android:layout_width="135dp"
+        android:layout_height="35sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/Pass_En"
+        android:inputType="textPersonName"
+        android:textColor="#008EFF"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUser_Cliente" />
+
+    <EditText
+        android:id="@+id/txtNom_Cliente"
+        android:layout_width="190dp"
+        android:layout_height="35sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/Nom_En"
+        android:inputType="textPersonName"
+        android:textColor="#008EFF"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTel_Cliente"
+        android:layout_width="189dp"
+        android:layout_height="35sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/Tel_En"
+        android:inputType="number"
+        android:textColor="#008EFF"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDire_Cliente" />
+
+    <EditText
+        android:id="@+id/txtEdad_Cliente"
+        android:layout_width="70dp"
+        android:layout_height="35sp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/Edad_En"
+        android:inputType="number"
+        android:textColor="#008EFF"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTel_Cliente" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/foto_Cliente"
+        android:layout_width="127dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelA_Cliente"
+        app:srcCompat="@mipmap/logos" />
+
+    <ImageButton
+        android:id="@+id/btnfoto_Cliente"
+        android:layout_width="66dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/ic_launcher_background"
+        android:onClick="tomarfoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto_Cliente"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Spinner
+        android:id="@+id/Sexo_Cliente"
+        android:layout_width="106dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtEdad_Cliente"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTel_Cliente" />
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="413dp"
+        android:layout_height="291dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditar_Cliente">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/table_Cliente"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9E8CCCFF"
+                    android:stretchColumns="*"
+                    android:textColor="#008EFF" />
+            </HorizontalScrollView>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnGuardar_Cliente"
+        android:layout_width="50sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btnguardarclick"
+        android:onClick="PGuardarMouseClicked"
+        app:layout_constraintStart_toEndOf="@+id/btnEditar_Cliente"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnfer_Cliente"
+         />
+
+    <ImageButton
+        android:id="@+id/btnEliminar_Cliente"
+        android:layout_width="50sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_eliminar_click"
+        android:onClick="PEliminarMouseClicked"
+        app:layout_constraintStart_toEndOf="@+id/btnBuscar_Cliente"
+        app:layout_constraintTop_toBottomOf="@+id/btnfoto_Cliente"
+         />
+
+    <ImageButton
+        android:id="@+id/btnLimpiar_Cliente"
+        android:layout_width="50sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_recargar_click"
+        android:onClick="Limpiar"
+        app:layout_constraintStart_toEndOf="@+id/btnEliminar_Cliente"
+        app:layout_constraintTop_toBottomOf="@+id/btnfoto_Cliente"
+         />
+
+    <ImageButton
+        android:id="@+id/btnEditar_Cliente"
+        android:layout_width="50sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_editar_click"
+        android:onClick="PModificarMouseClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnfer_Cliente"
+         />
+
+    <ImageButton
+        android:id="@+id/btnBuscar_Cliente"
+        android:layout_width="50sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_buscar_click"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar_Cliente"
+        app:layout_constraintTop_toBottomOf="@+id/btnfoto_Cliente"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

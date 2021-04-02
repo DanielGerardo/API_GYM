@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Red´s Gym</string>
+
+    <string name="app_menu">Red´s Gym</string>
+    <string name="app_login">Login</string>
+    <string name="app_Entrenador">Nuevo Entrenador</string>
+    <string name="app_Planes">Planes</string>
+    <string name="app_Productos">Productos</string>
+    <string name="app_clientes">Clientes</string>
+    <string name="app_Ventas">Ventas</string>
+    <string name="app_Control">Control</string>
+    <string name="app_Respaldar">Crear Respaldo</string>
+
+    <string name="txtUser">User</string>
+    <string name="txtpass">Password</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="autor">Email.- danielgecampos97@hotmail.com</string>
+    <string name="iv">iv</string>
+    <string name="User"></string>
+
+    <string name="User_En">UserName</string>
+    <string name="Pass_En">Password</string>
+    <string name="Nom_En">Nombres</string>
+    <string name="Ape_En">Apellidos</string>
+    <string name="Dire_En">Direccion</string>
+    <string name="Tel_En">Telefono</string>
+    <string name="TelA_En">Tel.Adicional</string>
+    <string name="Edad_En">Edad</string>
+
+
+    <string name="Ip_Publica">Ip Publica</string>
+
+    <string name="Plan_nombre">Nombre de Plan</string>
+    <string name="Plan_Observacion">Observación</string>
+    <string name="Plan_costo">Costo</string>
+    <string name="Plan_Dias">Dias de Duración</string>
+    <string name="Plan_ID">ID</string>
+
+    <string name="Pro_Des">Descripción</string>
+    <string name="Pro_Unidad">Unidad</string>
+    <string name="Pro_Stock">Stock</string>
+    <string name="Pro_Precio">Precio</string>
+    <string name="Pro_Cantidad">Cantidad</string>
+    <string name="Pro_ID">ID</string>
+    <string name="Pro_Entradas">Entradas</string>
+    <string name="Pro_Salidas">Salidas</string>
+    <string name="Pro_Historial">Historial</string>
+    <string name="title_activity_historial_activity">Historial_activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="Enfer_Cliente">¿Algúna Enfermedad?</string>
+    <string name="User_Cliente">User</string>
+
+    <string name="Vencimientos">Vencimientos</string>
+</resources>

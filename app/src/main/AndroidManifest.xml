@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appgym">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_login"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppGym">
+        <activity
+
+            android:name=".Imprimir"
+            android:label="Imprimir"/>
+        <activity
+            android:name=".EntradasySalidas"
+            android:label="Entradas y Salidas" />
+        <activity
+            android:name=".Vencimientos"
+            android:label="Vencimientos" />
+        <activity
+            android:name=".Menu_Clientes"
+            android:label="Clientes" />
+        <activity
+            android:name=".PlanesClientes"
+            android:label="PlanesClientes" />
+        <activity
+            android:name=".Historial_activity"
+            android:label="@string/title_activity_historial_activity"
+            android:theme="@style/Theme.AppGym.NoActionBar" />
+        <activity
+            android:name=".Respaldar_Activity"
+            android:label="@string/app_Respaldar" />
+        <activity
+            android:name=".Control_Activity"
+            android:label="@string/app_Control" />
+        <activity
+            android:name=".Ventas_Activity"
+            android:label="@string/app_Ventas" />
+        <activity
+            android:name=".Clientes_Activity"
+            android:label="@string/app_clientes" />
+        <activity
+            android:name=".Productos_Activity"
+            android:label="@string/app_Productos" />
+        <activity
+            android:name=".planes_activity"
+            android:label="@string/app_Planes" />
+        <activity
+            android:name=".NuevoEntrenador"
+            android:label="@string/app_Entrenador" />
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_menu" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

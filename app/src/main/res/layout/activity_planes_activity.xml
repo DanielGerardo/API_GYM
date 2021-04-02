@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".planes_activity">
+
+    <EditText
+        android:id="@+id/txtID_Plan"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/Plan_ID"
+        android:inputType="number"
+        android:textAlignment="viewStart"
+        android:textColor="#03A9F4"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNom_Plan"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/Plan_nombre"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="#03A9F4"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtID_Plan" />
+
+    <EditText
+        android:id="@+id/txtObs_Plan"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/Plan_Observacion"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textColor="#03A9F4"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCosto_Plan" />
+
+    <EditText
+        android:id="@+id/txtCosto_Plan"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/Plan_costo"
+        android:inputType="numberDecimal"
+        android:textAlignment="viewStart"
+        android:textColor="#03A9F4"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDias_Plan" />
+
+    <EditText
+        android:id="@+id/txtDias_Plan"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/Plan_Dias"
+        android:inputType="number"
+        android:textAlignment="viewStart"
+        android:textColor="#03A9F4"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNom_Plan" />
+
+    <ImageButton
+        android:id="@+id/btnGuardar_Plan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btnguardarclick"
+        android:onClick="GuardarPlan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecargar_Plan"
+        />
+
+    <ImageButton
+        android:id="@+id/btnEditar_Plan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_editar_click"
+        android:onClick="EditarPlan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardar_Plan"
+         />
+
+    <ImageButton
+        android:id="@+id/btnEliminar_Plan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_eliminar_click"
+        android:onClick="EliminarPlan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditar_Plan"
+         />
+
+    <ImageButton
+        android:id="@+id/btnBuscar_Plan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_buscar_click"
+        android:onClick="BuscarPlan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEliminar_Plan"
+         />
+
+    <ImageButton
+        android:id="@+id/btnRecargar_Plan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_recargar_click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="408dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtObs_Plan" />
+
+    <LinearLayout
+        android:id="@+id/LL_Plan"
+        android:layout_width="410dp"
+        android:layout_height="343dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:visibility="visible">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <TableLayout
+
+                    android:id="@+id/table_Plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#9E8CCCFF"
+                    android:stretchColumns="*"
+                    android:textColor="#008EFF"
+                    android:visibility="visible" />
+            </HorizontalScrollView>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
