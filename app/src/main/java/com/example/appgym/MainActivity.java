@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         if (User.length() == 0 || Pass.length()== 0) {
             Toast.makeText(this, "Debe de ingresar datos", Toast.LENGTH_SHORT).show();
         }
-        if (User.equals("danielcampos") && Pass.equals("123456")) {
+        if (User.equals("akoleni") && Pass.equals("xdgta5dak")) {
             Intent m = new Intent(this, Menu.class);
             m.putExtra("admin","Ing.Campos");
             startActivity(m);
