@@ -21,7 +21,7 @@
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toEndOf="@+id/button6"
+
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button

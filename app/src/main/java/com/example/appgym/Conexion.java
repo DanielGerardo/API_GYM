@@ -14,8 +14,8 @@ public class Conexion extends Exception{
 
 
     Connection acceso = null;
-    String local ="jdbc:jtds:sqlserver://IP donde esta alojada la BD:1433;databaseName=GYM;user=....;password=....;loginTimeout=1;";
-    String remoto = "jdbc:jtds:sqlserver://IP publica:1433;databaseName=GYM;user=....;password=....;loginTimeout=1;";
+    String local ="jdbc:jtds:sqlserver://192.168.1.78:1433;databaseName=GYM;user=da;password=1234;loginTimeout=1;";
+    String remoto = "jdbc:jtds:sqlserver://akolenii.gotdns.ch:1433;databaseName=GYM;user=da;password=1234;loginTimeout=1;";
 
     public Connection Conexion(){
 
@@ -24,14 +24,16 @@ public class Conexion extends Exception{
             StrictMode.setThreadPolicy(politica);
             Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
             acceso = DriverManager.getConnection(local);
-               PreparedStatement ps =   acceso.prepareStatement("select * from Clientes");
-                int rs = ps.executeUpdate();
-                if(rs <=0){
-                    acceso=null;
-                    acceso = DriverManager.getConnection(remoto);
-                }
         } catch (Exception e) {
-           System.out.println(""+e);
+            try {
+                acceso=null;
+                StrictMode.ThreadPolicy politica = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+                StrictMode.setThreadPolicy(politica);
+                Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
+                acceso = DriverManager.getConnection(remoto);
+            } catch (Exception ex) {
+
+            }
         }
         return acceso;
     }
