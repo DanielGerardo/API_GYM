@@ -14,8 +14,8 @@ public class Conexion extends Exception{
 
 
     Connection acceso = null;
-    String local ="jdbc:jtds:sqlserver://192.168.1.78:1433;databaseName=GYM;user=da;password=1234;loginTimeout=1;";
-    String remoto = "jdbc:jtds:sqlserver://akolenii.gotdns.ch:1433;databaseName=GYM;user=da;password=1234;loginTimeout=1;";
+    String local ="jdbc:jtds:sqlserver://Ip en donde se aloja la BD:1433;databaseName=GYM;user=;password=;loginTimeout=1;";
+    String remoto = "jdbc:jtds:sqlserver://Ip Publica:1433;databaseName=GYM;user=;password=;loginTimeout=1;";
 
     public Connection Conexion(){
 

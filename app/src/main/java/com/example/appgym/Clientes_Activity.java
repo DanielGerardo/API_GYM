@@ -9,6 +9,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
@@ -411,6 +412,9 @@ public class Clientes_Activity extends AppCompatActivity {
                         et4.setText(rs.getString("Telefono"));
                         et5.setText(rs.getString("Tel_Adicional"));
                         et6.setText(rs.getString("Edad"));
+                        byte[] fotobyte  = rs.getBytes("Fotografia");
+                        Bitmap bitmap = BitmapFactory.decodeByteArray(fotobyte, 0, fotobyte.length);
+                        img.setImageBitmap(bitmap);
                         et7.setText(rs.getString("UserName"));
                         et8.setText(rs.getString("Enfermedad"));
                         VisisblesBuscar();
